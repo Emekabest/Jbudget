@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="budget.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <title>budget</title>
+  </head>
+  <body>
+    
+    <div class="budget-body">
+      <div class="container">
+        <div class="budget-title"><h1>CALCULATE YOUR BUDGET</h1></div>
+        <div class="budgetBox">
+          <div class="eachBudgetBox">
+            <div>
+
+              <span class="budgetTopContent"
+                ><span><h3>place your budget below</h3></span>
+                <span class="budgetTopContent-font"
+                  ><i class="fa fa-hand-o-down"></i
+                ></span>
+              </span>
+              <form class="budget-form">
+                <div class="budget-input">
+                  <input
+                    type="number"
+                    class="budgetMain-input expensesitem"
+                    placeholder="enter budget "
+                    name="budget"
+                  />
+                  <div>
+                    <button class="budgetInput-button">enter budget</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="eachBudgetBox">
+            <span class="budgetTopContent"
+              ><span>
+                <h3 class="budgetTopContent-amount">your budget amount</h3>
+              </span>
+              <span class="budgetTopContent-font"
+                ><i class="fa fa-money"></i
+              ></span>
+            </span>
+            <div class="budget-input">
+              <div class="budgetamountContainer">
+                <span><h1 class="budget-amount">$0.00</h1></span>
+              </div>
+            </div>
+          </div>
+          <div class="eachBudgetBox">
+            <div>
+              <span class="budgetTopContent"
+                ><span>
+                  <h3>place your expenses below</h3>
+                </span>
+                <span class="budgetTopContent-font"
+                  ><i class="fa fa-hand-o-down"></i
+                ></span>
+              </span>
+
+              <form class="expense-form">
+                <div class="budget-input">
+                  <input
+                    type="number"
+                    class="expensesInput expensesitem"
+                    placeholder="enter expenses"
+                    name="expense"
+                  />
+
+                  <span class="helpSign"
+                    ><i
+                      class="fa fa-info-circle"
+                      onmouseover="handleMouse()"
+                      onmouseout="handleMouseOut()"
+                    ></i>
+                  </span>
+                  <h5 class="helpSign2">
+                    What you will literally <br />
+                    spend on
+                  </h5>
+
+                  <input
+                    type="text"
+                    class="itemsMain-input expensesitem"
+                    placeholder="enter items"
+                    name="items"
+                  />
+                  <div class="cautionDiv">
+                    <span><i class="fa fa-info-circle"></i></span>
+                    <h4>max words of 16</h4>
+                  </div>
+                  <div>
+                    <button class="budgetInput-button budgetInput-button2">
+                      enter expenses
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="eachBudgetBox">
+            <span class="budgetTopContent"
+              ><span>
+                <h3>your budget list</h3>
+              </span>
+              <span class="budgetTopContent-font"
+                ><i class="fa fa-file-text-o"></i
+              ></span>
+            </span>
+            <div class="budget-input budget-input2">
+              <div class="budget-2inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
